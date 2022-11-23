@@ -1,0 +1,122 @@
+:root {
+	--heading-font: 'Quicksand', sans-serif;
+	--main-font: 'Comic Neue', sans-serif;
+
+	--slate-100: #fcf1fc;
+	--slate-200: #f5f7f8;
+	--slate-300: #ebebf6;
+	--slate-400: #9da0b0;
+	--slate-500: #73788e;
+	--slate-600: #49506c;
+	--slate-700: #34384d;
+	--slate-800: #292d3e;
+	--slate-900: #202330;
+	--slate-50: #20233080;
+
+	--purple-100: #e2c9ff;
+	--purple-200: #d2adff;
+	--purple-300: #c291ff;
+	--purple-400: #b275ff;
+	--purple-500: #a259ff;
+	--purple-600: #8348d2;
+	--purple-700: #6536a4;
+	--purple-800: #472476;
+	--purple-900: #291248;
+}
+
+@font-face {
+	font-family: 'Quicksand';
+	font-weight: bold;
+	src: local('Quicksand'),
+		url('/assets/fonts/Quicksand-Bold.woff2') format('woff2'),
+		url('/assets/fonts/Quicksand-Bold.ttf') format('trutype');
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Comic Neue';
+	font-weight: normal;
+	src: local('Comic Neue'),
+		url('/assets/fonts/ComicNeue-Regular.woff2') format('woff2'),
+		url('/assets/fonts/ComicNeue-Regular.ttf') format('trutype');
+	font-display: swap;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+*,
+html {
+	scrollbar-width: thin;
+}
+
+body {
+	font-family: var(--main-font);
+	font-weight: normal;
+	min-height: 100vh;
+	background-color: var(--slate-900);
+	color: var(--slate-300);
+	overflow-y: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+b,
+strong,
+.bold {
+	font-family: var(--heading-font);
+	font-weight: bold;
+}
+
+*,
+html {
+	scrollbar-width: thin;
+}
+
+*::-webkit-scrollbar,
+html::-webkit-scrollbar {
+	-webkit-appearance: none;
+}
+
+*::-webkit-scrollbar,
+html::-webkit-scrollbar {
+	width: 8px;
+	height: 8px;
+}
+
+html::-webkit-scrollbar-track,
+html::-webkit-scrollbar-corner,
+*::-webkit-scrollbar-track,
+*::-webkit-scrollbar-corner {
+	background-color: var(--slate-800);
+}
+
+html::-webkit-scrollbar-thumb,
+*::-webkit-scrollbar-thumb {
+	background-color: var(--purple-600);
+	border-radius: 0.4rem;
+	transition: background-color 0.8s;
+}
+
+html::-webkit-scrollbar-thumb:hover,
+html::-webkit-scrollbar-thumb:active,
+*::-webkit-scrollbar-thumb:hover,
+*::-webkit-scrollbar-thumb:active {
+	background-color: var(--purple-700);
+}
+
+html::-webkit-scrollbar-button:increment,
+html::-webkit-scrollbar-button,
+*::-webkit-scrollbar-button:increment,
+*::-webkit-scrollbar-button {
+	display: none;
+}
