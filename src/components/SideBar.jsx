@@ -12,27 +12,27 @@ const SideBar = () => {
 		<aside className="h-[100vh] overflow-y-scroll p-4">
 			<nav className="flex flex-col h-full">
 				<h1 className="text-center text-2xl">
-					Admin<span className="text-purple-500 text-4xl">.</span>
+					Admin<span className="text-blue-500 text-4xl">.</span>
 				</h1>
 
 				<ul className="pt-6 flex flex-col gap-2">
-					<li className="bg-purple-90">
+					<li className="bg-blue-90">
 						<Link
 							to="/"
-							className="inline-flex items-center gap-2 text-slate-400 w-full p-2 rounded-md hover:bg-slate-900 hover:text-purple-500 transition-colors duration-1000"
+							className="inline-flex items-center gap-2 text-slate-100 w-full p-2 rounded-md hover:bg-slate-900 hover:text-blue-500 transition-colors duration-500 text-left"
 						>
-							<i className="ri-bar-chart-2-line text-purple-500"></i>
+							<i className="ri-bar-chart-2-line text-blue-500"></i>
 							Analíticas
 						</Link>
 					</li>
 
-					<li className="bg-purple-90 overflow-y-hidden">
+					<li className="bg-blue-90 overflow-y-hidden">
 						<button
 							onClick={handleHideSubMenu}
-							className="flex items-center gap-2 text-slate-400 w-full p-2 rounded-md hover:bg-slate-900 hover:text-purple-500 transition-colors duration-1000"
+							className="flex items-center gap-2 text-slate-100 w-full p-2 rounded-md hover:bg-slate-900 hover:text-blue-500 transition-colors duration-500 text-left"
 						>
 							<span className="pt-1">
-								<i className="ri-earth-line text-purple-500"></i>
+								<i className="ri-earth-line text-blue-500"></i>
 							</span>
 							<span>Redes sociales</span>
 							<span className="pt-1">
@@ -47,14 +47,14 @@ const SideBar = () => {
 						</button>
 
 						<ul
-							className={`bg-purple-90  ${
+							className={`bg-blue-90  ${
 								hideSubMenu ? 'h-fit' : 'h-[0]'
 							} transition-[height] duration-[500ms]`}
 						>
 							<li className="border-l ml-6 border-slate-700">
 								<Link
 									to="/"
-									className="block w-full py-2 pl-3 relative text-slate-400 before:h-3 before:w-3 before:absolute before:bg-purple-500 before:rounded-full before:block  before:-left-[6.5px] before:border-4 before:border-slate-800 inline-flex items-center rounded-md hover:bg-slate-900 hover:text-purple-500 transition-colors duration-1000"
+									className="block w-full py-2 pl-3 relative text-slate-100 before:h-3 before:w-3 before:absolute before:bg-blue-500 before:rounded-full before:block  before:-left-[6.5px] before:border-4 before:border-slate-800 inline-flex items-center rounded-md hover:bg-slate-900 hover:text-blue-500 transition-colors duration-500"
 								>
 									Post red social
 								</Link>
@@ -63,7 +63,7 @@ const SideBar = () => {
 							<li className="border-l ml-6 border-slate-700">
 								<Link
 									to="/"
-									className="block w-full py-2 pl-3 relative text-slate-400 before:h-3 before:w-3 before:absolute before:bg-slate-700 before:rounded-full before:block  before:-left-[6.5px] before:border-4 before:border-slate-800 inline-flex items-center rounded-md hover:bg-slate-900 hover:text-purple-500 transition-colors duration-1000"
+									className="block w-full py-2 pl-3 relative text-slate-100 before:h-3 before:w-3 before:absolute before:bg-slate-700 before:rounded-full before:block  before:-left-[6.5px] before:border-4 before:border-slate-800 inline-flex items-center rounded-md hover:bg-slate-900 hover:text-blue-500 transition-colors duration-500"
 								>
 									Estadisticas
 								</Link>
@@ -72,7 +72,7 @@ const SideBar = () => {
 							<li className="border-l ml-6 border-slate-700">
 								<Link
 									to="/"
-									className="block w-full py-2 pl-3 relative text-slate-400 before:h-3 before:w-3 before:absolute before:bg-slate-700 before:rounded-full before:block  before:-left-[6.5px] before:border-4 before:border-slate-800 inline-flex items-center rounded-md hover:bg-slate-900 hover:text-purple-500 transition-colors duration-1000"
+									className="block w-full py-2 pl-3 relative text-slate-100 before:h-3 before:w-3 before:absolute before:bg-slate-700 before:rounded-full before:block  before:-left-[6.5px] before:border-4 before:border-slate-800 inline-flex items-center rounded-md hover:bg-slate-900 hover:text-blue-500 transition-colors duration-500"
 								>
 									Perfiles
 								</Link>
@@ -80,22 +80,22 @@ const SideBar = () => {
 						</ul>
 					</li>
 
-					<li className="bg-purple-90">
+					<li className="bg-blue-90">
 						<Link
-							to="/"
-							className="inline-flex items-center gap-2 text-slate-400 w-full p-2 rounded-md hover:bg-slate-900 hover:text-purple-500 transition-colors duration-1000"
+							to="/tickets"
+							className="inline-flex items-center gap-2 text-slate-100 w-full p-2 rounded-md hover:bg-slate-900 hover:text-blue-500 transition-colors duration-500"
 						>
-							<i className="ri-chat-3-line text-purple-500"></i>
-							Mensajes
+							<i className="ri-user-settings-line text-blue-500"></i>
+							Soporte técnico
 						</Link>
 					</li>
 
-					<li className="bg-purple-90">
+					<li className="bg-blue-90">
 						<Link
-							to="/"
-							className="inline-flex items-center gap-2 text-slate-400 w-full p-2 rounded-md hover:bg-slate-900 hover:text-purple-500 transition-colors duration-1000"
+							to="/calendario"
+							className="inline-flex items-center gap-2 text-slate-100 w-full p-2 rounded-md hover:bg-slate-900 hover:text-blue-500 transition-colors duration-500"
 						>
-							<i className="ri-calendar-line text-purple-500"></i>
+							<i className="ri-calendar-line text-blue-500"></i>
 							Calendario
 						</Link>
 					</li>
@@ -103,10 +103,10 @@ const SideBar = () => {
 
 				<div className="mt-auto">
 					<Link
-						to="/"
-						className="inline-flex items-center gap-2 text-slate-400 w-full p-2 rounded-md hover:bg-slate-900 hover:text-purple-500 transition-colors duration-1000"
+						to="/cerrar-sesion"
+						className="inline-flex items-center gap-2 text-slate-100 w-full p-2 rounded-md hover:bg-slate-900 hover:text-blue-500 transition-colors duration-500"
 					>
-						<i className="ri-logout-circle-r-line text-purple-500"></i>
+						<i className="ri-logout-circle-r-line text-blue-500"></i>
 						Cerrar sesión
 					</Link>
 				</div>
