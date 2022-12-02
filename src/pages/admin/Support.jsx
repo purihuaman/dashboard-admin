@@ -1,12 +1,7 @@
 import { Tab, Disclosure, Transition } from '@headlessui/react';
 import { Link } from 'react-router-dom';
 
-const Tickets = () => {
-	const handleSelect = (ev) => {
-		console.log(ev.target);
-		ev.target.classList.add('active');
-	};
-
+const Support = () => {
 	return (
 		<div>
 			<div className="flex flex-col md:flex-row md:items-center justify-between gap-6 mb-4">
@@ -76,10 +71,6 @@ const Tickets = () => {
 
 								<Tab className="w-full inline-flex items-center justify-center py-2 px-4 uppercase text-sm rounded-md outline-none hover:bg-slate-600 hover:text-blue-500 ui-selected:text-blue-500 ui-selected:bg-slate-600 transition-colors">
 									FAQ
-								</Tab>
-
-								<Tab className="w-full inline-flex items-center justify-center py-2 px-4 uppercase text-sm whitespace-nowrap rounded-md outline-none hover:bg-slate-600 hover:text-blue-500 ui-selected:text-blue-500 ui-selected:bg-slate-600 transition-colors">
-									CONTACT US
 								</Tab>
 							</div>
 
@@ -530,8 +521,8 @@ const Tickets = () => {
 						{/* OVERVIEW */}
 
 						<Tab.Panel>
-							<div className="grid grid-cols-1 lg:grid-cols-2 gap-8 bg-slate-800 p-6 rounded-md">
-								<div>
+							<div className="grid grid-cols-1 lg:grid-cols-4 gap-8 bg-slate-800 p-6 rounded-md">
+								<div className="lg:col-span-3">
 									<form>
 										<div className="relative">
 											<i className="ri-search-line absolute left-4 top-1/2 -translate-y-1/2 text-blue-500"></i>
@@ -557,7 +548,7 @@ const Tickets = () => {
 													<div>
 														<Link
 															to="/"
-															className="font-bold text-xl hover:text-blue-500"
+															className="font-bold text-xl hover:text-blue-500 bold"
 														>
 															How to use Netronic with Django Framework?
 														</Link>
@@ -583,7 +574,7 @@ const Tickets = () => {
 													<div>
 														<Link
 															to="/"
-															className="font-bold text-xl hover:text-blue-500"
+															className="font-bold text-xl hover:text-blue-500 bold"
 														>
 															Admin theme npm issue
 														</Link>
@@ -608,7 +599,7 @@ const Tickets = () => {
 													<div>
 														<Link
 															to="/"
-															className="font-bold text-xl hover:text-blue-500"
+															className="font-bold text-xl hover:text-blue-500 bold"
 														>
 															Admin theme authentication to node.js / strapi
 															backend
@@ -634,7 +625,7 @@ const Tickets = () => {
 													<div>
 														<Link
 															to="/"
-															className="font-bold text-xl hover:text-blue-500"
+															className="font-bold text-xl hover:text-blue-500 bold"
 														>
 															How to use Admin theme with Django Framework?
 														</Link>
@@ -660,7 +651,7 @@ const Tickets = () => {
 													<div>
 														<Link
 															to="/"
-															className="font-bold text-xl hover:text-blue-500"
+															className="font-bold text-xl hover:text-blue-500 bold"
 														>
 															Reducing footprint of Start theme
 														</Link>
@@ -685,7 +676,7 @@ const Tickets = () => {
 													<div>
 														<Link
 															to="/"
-															className="font-bold text-xl hover:text-blue-500"
+															className="font-bold text-xl hover:text-blue-500 bold"
 														>
 															Admin theme node.js / strapi backend
 														</Link>
@@ -711,7 +702,7 @@ const Tickets = () => {
 													<div>
 														<Link
 															to="/"
-															className="font-bold text-xl hover:text-blue-500"
+															className="font-bold text-xl hover:text-blue-500 bold"
 														>
 															Admin theme npm issue
 														</Link>
@@ -736,7 +727,7 @@ const Tickets = () => {
 													<div>
 														<Link
 															to="/"
-															className="font-bold text-xl hover:text-blue-500"
+															className="font-bold text-xl hover:text-blue-500 bold"
 														>
 															How to use Admin theme with Django Framework?
 														</Link>
@@ -753,26 +744,57 @@ const Tickets = () => {
 												</div>
 											</div>
 
-											<div className="flex items-center gap-4">navegación</div>
+											<div className="text-xl">
+												<nav className="flex items-center justify-center gap-4">
+													<button className="py-1 px-2 inline-flex items-center justify-center rounded-md hover:bg-blue-500 transition-colors">
+														<i className="ri-arrow-left-s-line"></i>
+													</button>
+
+													<div className="flex items-center justify-center gap-4">
+														<button className="py-1 px-3 inline-flex items-center justify-center rounded-md hover:bg-blue-500 transition-colors">
+															1
+														</button>
+														<button className="py-1 px-3 inline-flex items-center justify-center rounded-md bg-blue-500 transition-colors">
+															2
+														</button>
+														<button className="py-1 px-3 inline-flex items-center justify-center rounded-md hover:bg-blue-500 transition-colors">
+															3
+														</button>
+														<button className="py-1 px-3 inline-flex items-center justify-center rounded-md hover:bg-blue-500 transition-colors">
+															4
+														</button>
+														<button className="py-1 px-3 inline-flex items-center justify-center rounded-md hover:bg-blue-500 transition-colors">
+															5
+														</button>
+														<button className="py-1 px-3 inline-flex items-center justify-center rounded-md hover:bg-blue-500 transition-colors">
+															6
+														</button>
+													</div>
+
+													<button className="py-1 px-2 inline-flex items-center justify-center rounded-md hover:bg-blue-500 transition-colors">
+														<i className="ri-arrow-right-s-line"></i>
+													</button>
+												</nav>
+											</div>
 										</div>
 									</div>
 									{/* CONTENT */}
 								</div>
 								{/* TITLE: SEARCHER - CONTENT  */}
 
-								<div className="lg:px-8">
-									<div className="bg-blue-50 py-6 px-10 rounded-md mb-8 md:w-[80%] mx-auto">
+								<div>
+									<div className="bg-blue-50 py-6 px-6 rounded-md mb-8">
 										<h2 className="text-xl">More Channels</h2>
 
 										<div className="flex flex-col gap-6 pt-6">
-											<div className="flex items-center gap-4">
+											<div className="flex items-center gap-3">
 												<div>
-													<i className="ri-booklet-line text-2xl text-blue-500"></i>
+													<i className="ri-file-text-line text-2xl text-blue-500"></i>
 												</div>
 
 												<div>
 													<h4>Project Briefing</h4>
-													<span className="text-sm whitespace-nowrap text-slate-300">
+													<span className="text-sm text-slate-300">
 														Check out our{' '}
 														<Link
 															to="/"
@@ -784,7 +806,7 @@ const Tickets = () => {
 												</div>
 											</div>
 
-											<div className="flex items-center gap-4">
+											<div className="flex items-center gap-3">
 												<div>
 													<i className="ri-chat-1-line text-2xl text-blue-500"></i>
 												</div>
@@ -803,7 +825,7 @@ const Tickets = () => {
 												</div>
 											</div>
 
-											<div className="flex items-center gap-4">
+											<div className="flex items-center gap-3">
 												<div>
 													<i className="ri-twitter-line text-2xl text-blue-500"></i>
 												</div>
@@ -822,7 +844,7 @@ const Tickets = () => {
 												</div>
 											</div>
 
-											<div className="flex items-center gap-4">
+											<div className="flex items-center gap-3">
 												<div>
 													<i className="ri-github-line text-2xl text-blue-500"></i>
 												</div>
@@ -843,7 +865,7 @@ const Tickets = () => {
 										</div>
 									</div>
 
-									<div className="bg-blue-50 py-6 px-10 rounded-md mb-8 md:w-[80%] mx-auto">
+									<div className="bg-blue-50 py-6 px-6 rounded-md mb-8">
 										<h2 className="text-xl">Documentation</h2>
 
 										<div className="flex flex-col gap-6 pt-6">
@@ -944,8 +966,605 @@ const Tickets = () => {
 						</Tab.Panel>
 						{/* TICKETS */}
 
-						<Tab.Panel>Content 3</Tab.Panel>
-						<Tab.Panel>Content 4</Tab.Panel>
+						<Tab.Panel>
+							<div className="bg-slate-800 p-8 rounded-md">
+								<div className="mb-8">
+									<h2 className="text-2xl mb-4">Frequesntly Asked Questions</h2>
+									<p className="text-slate-300">
+										First, a disclaimer – the entire process of writing a blog
+										post often takes more than a couple of hours, even if you
+										can type eighty words as per minute and your writing skills
+										are sharp
+									</p>
+								</div>
+
+								<div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+									<div>
+										<h2 className="text-xl">Buying Product</h2>
+
+										<div className="py-4">
+											<Disclosure>
+												<Disclosure.Button className="py-4 flex items-center gap-x-2">
+													<div className="inline-flex items-center justify-center py-1 px-2 rounded-md bg-slate-700 ui-open:bg-blue-50">
+														<i className="ri-arrow-right-s-line ui-open:rotate-90 ui-open:text-blue-500"></i>
+													</div>
+
+													<h3 className="text-slate-200 text-left">
+														How does it work?
+													</h3>
+												</Disclosure.Button>
+
+												<Transition
+													enter="transition duration-100 ease-out"
+													enterFrom="transform scale-95 opacity-0"
+													enterTo="transform scale-100 opacity-100"
+													leave="transition duration-75 ease-out"
+													leaveFrom="transform scale-100 opacity-100"
+													leaveTo="transform scale-95 opacity-0"
+												>
+													<Disclosure.Panel className="text-gray-500 pl-6 pb-4">
+														<p>
+															First, a disclaimer – the entire process of
+															writing a blog post often takes more than a couple
+															of hours, even if you can type eighty words as per
+															minute and your writing skills are sharp.
+														</p>
+													</Disclosure.Panel>
+												</Transition>
+											</Disclosure>
+
+											<hr className="border-dashed border-slate-600" />
+
+											<Disclosure>
+												<Disclosure.Button className="py-4 flex items-center gap-x-2">
+													<div className="inline-flex items-center justify-center py-1 px-2 rounded-md bg-slate-700 ui-open:bg-blue-50">
+														<i className="ri-arrow-right-s-line ui-open:rotate-90 ui-open:text-blue-500"></i>
+													</div>
+
+													<h3 className="text-slate-200 text-left">
+														Do I need a designer to use Admin Theme ?
+													</h3>
+												</Disclosure.Button>
+
+												<Transition
+													enter="transition duration-100 ease-out"
+													enterFrom="transform scale-95 opacity-0"
+													enterTo="transform scale-100 opacity-100"
+													leave="transition duration-75 ease-out"
+													leaveFrom="transform scale-100 opacity-100"
+													leaveTo="transform scale-95 opacity-0"
+												>
+													<Disclosure.Panel className="text-gray-500 pl-6 pb-4">
+														<p>
+															First, a disclaimer – the entire process of
+															writing a blog post often takes more than a couple
+															of hours, even if you can type eighty words as per
+															minute and your writing skills are sharp.
+														</p>
+													</Disclosure.Panel>
+												</Transition>
+											</Disclosure>
+
+											<hr className="border-dashed border-slate-600" />
+
+											<Disclosure>
+												<Disclosure.Button className="py-4 flex items-center gap-x-2">
+													<div className="inline-flex items-center justify-center py-1 px-2 rounded-md bg-slate-700 ui-open:bg-blue-50">
+														<i className="ri-arrow-right-s-line ui-open:rotate-90 ui-open:text-blue-500"></i>
+													</div>
+
+													<h3 className="text-slate-200 text-left">
+														What do I need to do to start selling?
+													</h3>
+												</Disclosure.Button>
+
+												<Transition
+													enter="transition duration-100 ease-out"
+													enterFrom="transform scale-95 opacity-0"
+													enterTo="transform scale-100 opacity-100"
+													leave="transition duration-75 ease-out"
+													leaveFrom="transform scale-100 opacity-100"
+													leaveTo="transform scale-95 opacity-0"
+												>
+													<Disclosure.Panel className="text-gray-500 pl-6 pb-4">
+														<p>
+															First, a disclaimer – the entire process of
+															writing a blog post often takes more than a couple
+															of hours, even if you can type eighty words as per
+															minute and your writing skills are sharp.
+														</p>
+													</Disclosure.Panel>
+												</Transition>
+											</Disclosure>
+
+											<hr className="border-dashed border-slate-600" />
+
+											<Disclosure>
+												<Disclosure.Button className="py-4 flex items-center gap-x-2">
+													<div className="inline-flex items-center justify-center py-1 px-2 rounded-md bg-slate-700 ui-open:bg-blue-50">
+														<i className="ri-arrow-right-s-line ui-open:rotate-90 ui-open:text-blue-500"></i>
+													</div>
+
+													<h3 className="text-slate-200 text-left">
+														How much does Extended license cost?
+													</h3>
+												</Disclosure.Button>
+
+												<Transition
+													enter="transition duration-100 ease-out"
+													enterFrom="transform scale-95 opacity-0"
+													enterTo="transform scale-100 opacity-100"
+													leave="transition duration-75 ease-out"
+													leaveFrom="transform scale-100 opacity-100"
+													leaveTo="transform scale-95 opacity-0"
+												>
+													<Disclosure.Panel className="text-gray-500 pl-6 pb-4">
+														<p>
+															First, a disclaimer – the entire process of
+															writing a blog post often takes more than a couple
+															of hours, even if you can type eighty words as per
+															minute and your writing skills are sharp.
+														</p>
+													</Disclosure.Panel>
+												</Transition>
+											</Disclosure>
+										</div>
+									</div>
+									{/* BUYING PRODUCT */}
+
+									<div>
+										<h2 className="text-xl">Buying Product</h2>
+
+										<div className="py-4">
+											<Disclosure>
+												<Disclosure.Button className="py-4 flex items-center gap-x-2">
+													<div className="inline-flex items-center justify-center py-1 px-2 rounded-md bg-slate-700 ui-open:bg-blue-50">
+														<i className="ri-arrow-right-s-line ui-open:rotate-90 ui-open:text-blue-500"></i>
+													</div>
+
+													<h3 className="text-slate-200 text-left">
+														What platforms are compatible?
+													</h3>
+												</Disclosure.Button>
+
+												<Transition
+													enter="transition duration-100 ease-out"
+													enterFrom="transform scale-95 opacity-0"
+													enterTo="transform scale-100 opacity-100"
+													leave="transition duration-75 ease-out"
+													leaveFrom="transform scale-100 opacity-100"
+													leaveTo="transform scale-95 opacity-0"
+												>
+													<Disclosure.Panel className="text-gray-500 pl-6 pb-4">
+														<p>
+															First, a disclaimer – the entire process of
+															writing a blog post often takes more than a couple
+															of hours, even if you can type eighty words as per
+															minute and your writing skills are sharp.
+														</p>
+													</Disclosure.Panel>
+												</Transition>
+											</Disclosure>
+
+											<hr className="border-dashed border-slate-600" />
+
+											<Disclosure>
+												<Disclosure.Button className="py-4 flex items-center gap-x-2">
+													<div className="inline-flex items-center justify-center py-1 px-2 rounded-md bg-slate-700 ui-open:bg-blue-50">
+														<i className="ri-arrow-right-s-line ui-open:rotate-90 ui-open:text-blue-500"></i>
+													</div>
+
+													<h3 className="text-slate-200 text-left">
+														How many people can it support?
+													</h3>
+												</Disclosure.Button>
+
+												<Transition
+													enter="transition duration-100 ease-out"
+													enterFrom="transform scale-95 opacity-0"
+													enterTo="transform scale-100 opacity-100"
+													leave="transition duration-75 ease-out"
+													leaveFrom="transform scale-100 opacity-100"
+													leaveTo="transform scale-95 opacity-0"
+												>
+													<Disclosure.Panel className="text-gray-500 pl-6 pb-4">
+														<p>
+															First, a disclaimer – the entire process of
+															writing a blog post often takes more than a couple
+															of hours, even if you can type eighty words as per
+															minute and your writing skills are sharp.
+														</p>
+													</Disclosure.Panel>
+												</Transition>
+											</Disclosure>
+
+											<hr className="border-dashed border-slate-600" />
+
+											<Disclosure>
+												<Disclosure.Button className="py-4 flex items-center gap-x-2">
+													<div className="inline-flex items-center justify-center py-1 px-2 rounded-md bg-slate-700 ui-open:bg-blue-50">
+														<i className="ri-arrow-right-s-line ui-open:rotate-90 ui-open:text-blue-500"></i>
+													</div>
+
+													<h3 className="text-slate-200 text-left">
+														How long is the warrianty?
+													</h3>
+												</Disclosure.Button>
+
+												<Transition
+													enter="transition duration-100 ease-out"
+													enterFrom="transform scale-95 opacity-0"
+													enterTo="transform scale-100 opacity-100"
+													leave="transition duration-75 ease-out"
+													leaveFrom="transform scale-100 opacity-100"
+													leaveTo="transform scale-95 opacity-0"
+												>
+													<Disclosure.Panel className="text-gray-500 pl-6 pb-4">
+														<p>
+															First, a disclaimer – the entire process of
+															writing a blog post often takes more than a couple
+															of hours, even if you can type eighty words as per
+															minute and your writing skills are sharp.
+														</p>
+													</Disclosure.Panel>
+												</Transition>
+											</Disclosure>
+
+											<hr className="border-dashed border-slate-600" />
+
+											<Disclosure>
+												<Disclosure.Button className="py-4 flex items-center gap-x-2">
+													<div className="inline-flex items-center justify-center py-1 px-2 rounded-md bg-slate-700 ui-open:bg-blue-50">
+														<i className="ri-arrow-right-s-line ui-open:rotate-90 ui-open:text-blue-500"></i>
+													</div>
+
+													<h3 className="text-slate-200 text-left">
+														How fast is the installation?
+													</h3>
+												</Disclosure.Button>
+
+												<Transition
+													enter="transition duration-100 ease-out"
+													enterFrom="transform scale-95 opacity-0"
+													enterTo="transform scale-100 opacity-100"
+													leave="transition duration-75 ease-out"
+													leaveFrom="transform scale-100 opacity-100"
+													leaveTo="transform scale-95 opacity-0"
+												>
+													<Disclosure.Panel className="text-gray-500 pl-6 pb-4">
+														<p>
+															First, a disclaimer – the entire process of
+															writing a blog post often takes more than a couple
+															of hours, even if you can type eighty words as per
+															minute and your writing skills are sharp.
+														</p>
+													</Disclosure.Panel>
+												</Transition>
+											</Disclosure>
+										</div>
+									</div>
+									{/* INSTALLATION */}
+
+									<div>
+										<h2 className="text-xl">User Roles</h2>
+
+										<div className="py-4">
+											<Disclosure>
+												<Disclosure.Button className="py-4 flex items-center gap-x-2">
+													<div className="inline-flex items-center justify-center py-1 px-2 rounded-md bg-slate-700 ui-open:bg-blue-50">
+														<i className="ri-arrow-right-s-line ui-open:rotate-90 ui-open:text-blue-500"></i>
+													</div>
+
+													<h3 className="text-slate-200 text-left">
+														What platforms are compatible?
+													</h3>
+												</Disclosure.Button>
+
+												<Transition
+													enter="transition duration-100 ease-out"
+													enterFrom="transform scale-95 opacity-0"
+													enterTo="transform scale-100 opacity-100"
+													leave="transition duration-75 ease-out"
+													leaveFrom="transform scale-100 opacity-100"
+													leaveTo="transform scale-95 opacity-0"
+												>
+													<Disclosure.Panel className="text-gray-500 pl-6 pb-4">
+														<p>
+															First, a disclaimer – the entire process of
+															writing a blog post often takes more than a couple
+															of hours, even if you can type eighty words as per
+															minute and your writing skills are sharp.
+														</p>
+													</Disclosure.Panel>
+												</Transition>
+											</Disclosure>
+
+											<hr className="border-dashed border-slate-600" />
+
+											<Disclosure>
+												<Disclosure.Button className="py-4 flex items-center gap-x-2">
+													<div className="inline-flex items-center justify-center py-1 px-2 rounded-md bg-slate-700 ui-open:bg-blue-50">
+														<i className="ri-arrow-right-s-line ui-open:rotate-90 ui-open:text-blue-500"></i>
+													</div>
+
+													<h3 className="text-slate-200 text-left">
+														How many people can it support?
+													</h3>
+												</Disclosure.Button>
+
+												<Transition
+													enter="transition duration-100 ease-out"
+													enterFrom="transform scale-95 opacity-0"
+													enterTo="transform scale-100 opacity-100"
+													leave="transition duration-75 ease-out"
+													leaveFrom="transform scale-100 opacity-100"
+													leaveTo="transform scale-95 opacity-0"
+												>
+													<Disclosure.Panel className="text-gray-500 pl-6 pb-4">
+														<p>
+															First, a disclaimer – the entire process of
+															writing a blog post often takes more than a couple
+															of hours, even if you can type eighty words as per
+															minute and your writing skills are sharp.
+														</p>
+													</Disclosure.Panel>
+												</Transition>
+											</Disclosure>
+
+											<hr className="border-dashed border-slate-600" />
+
+											<Disclosure>
+												<Disclosure.Button className="py-4 flex items-center gap-x-2">
+													<div className="inline-flex items-center justify-center py-1 px-2 rounded-md bg-slate-700 ui-open:bg-blue-50">
+														<i className="ri-arrow-right-s-line ui-open:rotate-90 ui-open:text-blue-500"></i>
+													</div>
+
+													<h3 className="text-slate-200 text-left">
+														How long is the warrianty?
+													</h3>
+												</Disclosure.Button>
+
+												<Transition
+													enter="transition duration-100 ease-out"
+													enterFrom="transform scale-95 opacity-0"
+													enterTo="transform scale-100 opacity-100"
+													leave="transition duration-75 ease-out"
+													leaveFrom="transform scale-100 opacity-100"
+													leaveTo="transform scale-95 opacity-0"
+												>
+													<Disclosure.Panel className="text-gray-500 pl-6 pb-4">
+														<p>
+															First, a disclaimer – the entire process of
+															writing a blog post often takes more than a couple
+															of hours, even if you can type eighty words as per
+															minute and your writing skills are sharp.
+														</p>
+													</Disclosure.Panel>
+												</Transition>
+											</Disclosure>
+
+											<hr className="border-dashed border-slate-600" />
+
+											<Disclosure>
+												<Disclosure.Button className="py-4 flex items-center gap-x-2">
+													<div className="inline-flex items-center justify-center py-1 px-2 rounded-md bg-slate-700 ui-open:bg-blue-50">
+														<i className="ri-arrow-right-s-line ui-open:rotate-90 ui-open:text-blue-500"></i>
+													</div>
+
+													<h3 className="text-slate-200 text-left">
+														How fast is the installation?
+													</h3>
+												</Disclosure.Button>
+
+												<Transition
+													enter="transition duration-100 ease-out"
+													enterFrom="transform scale-95 opacity-0"
+													enterTo="transform scale-100 opacity-100"
+													leave="transition duration-75 ease-out"
+													leaveFrom="transform scale-100 opacity-100"
+													leaveTo="transform scale-95 opacity-0"
+												>
+													<Disclosure.Panel className="text-gray-500 pl-6 pb-4">
+														<p>
+															First, a disclaimer – the entire process of
+															writing a blog post often takes more than a couple
+															of hours, even if you can type eighty words as per
+															minute and your writing skills are sharp.
+														</p>
+													</Disclosure.Panel>
+												</Transition>
+											</Disclosure>
+										</div>
+									</div>
+									{/* INSTALLATION */}
+
+									<div>
+										<h2 className="text-xl">Reports Generation</h2>
+
+										<div className="py-4">
+											<Disclosure>
+												<Disclosure.Button className="py-4 flex items-center gap-x-2">
+													<div className="inline-flex items-center justify-center py-1 px-2 rounded-md bg-slate-700 ui-open:bg-blue-50">
+														<i className="ri-arrow-right-s-line ui-open:rotate-90 ui-open:text-blue-500"></i>
+													</div>
+
+													<h3 className="text-slate-200 text-left">
+														What platforms are compatible?
+													</h3>
+												</Disclosure.Button>
+
+												<Transition
+													enter="transition duration-100 ease-out"
+													enterFrom="transform scale-95 opacity-0"
+													enterTo="transform scale-100 opacity-100"
+													leave="transition duration-75 ease-out"
+													leaveFrom="transform scale-100 opacity-100"
+													leaveTo="transform scale-95 opacity-0"
+												>
+													<Disclosure.Panel className="text-gray-500 pl-6 pb-4">
+														<p>
+															First, a disclaimer – the entire process of
+															writing a blog post often takes more than a couple
+															of hours, even if you can type eighty words as per
+															minute and your writing skills are sharp.
+														</p>
+													</Disclosure.Panel>
+												</Transition>
+											</Disclosure>
+
+											<hr className="border-dashed border-slate-600" />
+
+											<Disclosure>
+												<Disclosure.Button className="py-4 flex items-center gap-x-2">
+													<div className="inline-flex items-center justify-center py-1 px-2 rounded-md bg-slate-700 ui-open:bg-blue-50">
+														<i className="ri-arrow-right-s-line ui-open:rotate-90 ui-open:text-blue-500"></i>
+													</div>
+
+													<h3 className="text-slate-200 text-left">
+														How many people can it support?
+													</h3>
+												</Disclosure.Button>
+
+												<Transition
+													enter="transition duration-100 ease-out"
+													enterFrom="transform scale-95 opacity-0"
+													enterTo="transform scale-100 opacity-100"
+													leave="transition duration-75 ease-out"
+													leaveFrom="transform scale-100 opacity-100"
+													leaveTo="transform scale-95 opacity-0"
+												>
+													<Disclosure.Panel className="text-gray-500 pl-6 pb-4">
+														<p>
+															First, a disclaimer – the entire process of
+															writing a blog post often takes more than a couple
+															of hours, even if you can type eighty words as per
+															minute and your writing skills are sharp.
+														</p>
+													</Disclosure.Panel>
+												</Transition>
+											</Disclosure>
+
+											<hr className="border-dashed border-slate-600" />
+
+											<Disclosure>
+												<Disclosure.Button className="py-4 flex items-center gap-x-2">
+													<div className="inline-flex items-center justify-center py-1 px-2 rounded-md bg-slate-700 ui-open:bg-blue-50">
+														<i className="ri-arrow-right-s-line ui-open:rotate-90 ui-open:text-blue-500"></i>
+													</div>
+
+													<h3 className="text-slate-200 text-left">
+														How long is the warrianty?
+													</h3>
+												</Disclosure.Button>
+
+												<Transition
+													enter="transition duration-100 ease-out"
+													enterFrom="transform scale-95 opacity-0"
+													enterTo="transform scale-100 opacity-100"
+													leave="transition duration-75 ease-out"
+													leaveFrom="transform scale-100 opacity-100"
+													leaveTo="transform scale-95 opacity-0"
+												>
+													<Disclosure.Panel className="text-gray-500 pl-6 pb-4">
+														<p>
+															First, a disclaimer – the entire process of
+															writing a blog post often takes more than a couple
+															of hours, even if you can type eighty words as per
+															minute and your writing skills are sharp.
+														</p>
+													</Disclosure.Panel>
+												</Transition>
+											</Disclosure>
+
+											<hr className="border-dashed border-slate-600" />
+
+											<Disclosure>
+												<Disclosure.Button className="py-4 flex items-center gap-x-2">
+													<div className="inline-flex items-center justify-center py-1 px-2 rounded-md bg-slate-700 ui-open:bg-blue-50">
+														<i className="ri-arrow-right-s-line ui-open:rotate-90 ui-open:text-blue-500"></i>
+													</div>
+
+													<h3 className="text-slate-200 text-left">
+														How fast is the installation?
+													</h3>
+												</Disclosure.Button>
+
+												<Transition
+													enter="transition duration-100 ease-out"
+													enterFrom="transform scale-95 opacity-0"
+													enterTo="transform scale-100 opacity-100"
+													leave="transition duration-75 ease-out"
+													leaveFrom="transform scale-100 opacity-100"
+													leaveTo="transform scale-95 opacity-0"
+												>
+													<Disclosure.Panel className="text-gray-500 pl-6 pb-4">
+														<p>
+															First, a disclaimer – the entire process of
+															writing a blog post often takes more than a couple
+															of hours, even if you can type eighty words as per
+															minute and your writing skills are sharp.
+														</p>
+													</Disclosure.Panel>
+												</Transition>
+											</Disclosure>
+										</div>
+									</div>
+									{/* INSTALLATION */}
+								</div>
+								{/* PRODUCT - INSTALLATION - ROLES - GENERATION */}
+
+								<div className="bg-slate-700 p-8 flex items-center justify-center gap-2 md:gap-6 rounded-md">
+									<Link to="/" target="_blank">
+										<img
+											src="/assets/logo/facebook.svg"
+											alt="Facebook"
+											className="h-12 w-12"
+										/>
+									</Link>
+
+									<Link to="/" target="_blank">
+										<img
+											src="/assets/logo/instagram.svg"
+											alt="Instagram"
+											className="h-12 w-12"
+										/>
+									</Link>
+
+									<Link to="/" target="_blank">
+										<img
+											src="/assets/logo/github.svg"
+											alt="Github"
+											className="h-12 w-12"
+										/>
+									</Link>
+
+									<Link to="/" target="_blank">
+										<img
+											src="/assets/logo/twitter.svg"
+											alt="Twitter"
+											className="h-12 w-12"
+										/>
+									</Link>
+
+									<Link to="/" target="_blank">
+										<img
+											src="/assets/logo/pinterest.svg"
+											alt="Pinterest"
+											className="h-12 w-12"
+										/>
+									</Link>
+
+									<Link to="/" target="_blank">
+										<img
+											src="/assets/logo/dribbble.svg"
+											alt="Dribbble"
+											className="h-12 w-12"
+										/>
+									</Link>
+								</div>
+								{/* NETWORKS */}
+							</div>
+						</Tab.Panel>
 					</Tab.Panels>
 				</Tab.Group>
 			</div>
@@ -953,4 +1572,4 @@ const Tickets = () => {
 	);
 };
 
-export default Tickets;
+export default Support;

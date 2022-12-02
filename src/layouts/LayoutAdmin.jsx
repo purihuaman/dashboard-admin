@@ -11,7 +11,7 @@ const LayoutAdmin = () => {
 	return (
 		<div className="min-h-screen p2 grid grid-cols-1 xl:grid-cols-6 gap-2">
 			<div
-				className={`xl:col-span-1 bg-slate-800 fixed z-10 xl:sticky top-0 lef-0 w-[80%] md:w-[40%] lg:w-[30%] xl:w-auto h-full ${
+				className={`xl:col-span-1 bg-slate-800 fixed z-40 xl:sticky top-0 lef-0 w-[80%] md:w-[40%] lg:w-[30%] xl:w-auto h-full ${
 					hideMenu ? 'left-0' : '-left-full'
 				} transition-[left] duration-500`}
 			>

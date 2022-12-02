@@ -1,17 +1,6 @@
 :root {
-	--heading-font: 'Quicksand', sans-serif;
-	--main-font: 'Comic Neue', sans-serif;
-
-	/* --slate-100: #f2f2fc;
-	--slate-200: #f8f9fc;
-	--slate-300: #e4e6ef;
-	--slate-400: #7e8299;
-	--slate-500: #565674;
-	--slate-600: #2b2b40;
-	--slate-700: #2a2a3c;
-	--slate-800: #1e1e2d;
-	--slate-900: #151521;
-	--slate-50: #15152110; */
+	--heading-font: 'Manrope', sans-serif;
+	--main-font: 'Delius', sans-serif;
 
 	--slate-100: #ffffff;
 	--slate-200: #cdcdde;
@@ -44,7 +33,7 @@
 	--purple-700: #722da4;
 	--purple-800: #511e76;
 	--purple-900: #300f48;
-	--purple-50: #b54cff20;
+	--purple-50: #b54cff10;
 
 	--green-100: #c4f1d0;
 	--green-200: #9fe9b2;
@@ -55,7 +44,7 @@
 	--green-700: #208739;
 	--green-800: #176129;
 	--green-900: #0e3b19;
-	--green-50: #30d15850;
+	--green-50: #30d15810;
 
 	--red-100: #ffc3cf;
 	--red-200: #ffa0b3;
@@ -66,24 +55,23 @@
 	--red-700: #a4213b;
 	--red-800: #761629;
 	--red-900: #480b17;
-	--red-50: #ff375f50;
+	--red-50: #ff375f10;
 }
 
 @font-face {
-	font-family: 'Quicksand';
+	font-family: 'Manrope';
 	font-weight: bold;
-	src: local('Quicksand'),
-		url('/assets/fonts/Quicksand-Bold.woff2') format('woff2'),
-		url('/assets/fonts/Quicksand-Bold.ttf') format('trutype');
+	src: local('Manrope'), url('/assets/fonts/Manrope-Bold.woff2') format('woff2'),
+		url('/assets/fonts/Manrope-Bold.ttf') format('trutype');
 	font-display: swap;
 }
 
 @font-face {
-	font-family: 'Comic Neue';
+	font-family: 'Delius';
 	font-weight: normal;
-	src: local('Comic Neue'),
-		url('/assets/fonts/ComicNeue-Regular.woff2') format('woff2'),
-		url('/assets/fonts/ComicNeue-Regular.ttf') format('trutype');
+	src: local('Delius'),
+		url('/assets/fonts/Delius-Regular.woff2') format('woff2'),
+		url('/assets/fonts/Delius-Regular.ttf') format('trutype');
 	font-display: swap;
 }
 

@@ -10,7 +10,7 @@ const Login = () => {
 		<div className="min-h-screen flex items-center justify-center bg-[url('/assets/image/hero.jpg')] bg-no-repeat bg-cover px-2">
 			<div className="w-full max-w-md bg-slate-800 p-6 rounded-md shadow-2xl">
 				<h1 className="text-3xl text-center uppercase tracking-[4px]">
-					Iniciar <span className="text-purple-500">sesión</span>
+					Log<span className="text-purple-500">in</span>
 				</h1>
 
 				<form action="#" className="py-6 px-2">
@@ -23,7 +23,7 @@ const Login = () => {
 							alt="Google"
 							className="h-5 w-5"
 						/>
-						Ingresa con Google
+						Sign in with Google
 					</a>
 
 					<div className="mt-8 relative">
@@ -33,7 +33,7 @@ const Login = () => {
 							name="email"
 							id="email"
 							className="w-full py-3 pr-3 pl-8 rounded-md bg-slate-900 outline-none"
-							placeholder="Correo electrónico"
+							placeholder="Email"
 						/>
 					</div>
 
@@ -45,7 +45,7 @@ const Login = () => {
 							name="password"
 							id="password"
 							className="w-full py-3 px-8 rounded-md bg-slate-900 outline-none"
-							placeholder="Correo electrónico"
+							placeholder="Password"
 						/>
 
 						<i
@@ -61,25 +61,25 @@ const Login = () => {
 							type="submit"
 							className="w-full inline-flex justify-center items-center py-3 px-8 bg-purple-500 rounded-md hover:bg-purple-600 transition-colors duration-1000 hover:shadow-xl uppercase"
 						>
-							Ingresar
+							login
 						</button>
 					</div>
 				</form>
 
 				<div className="text-center flex flex-col gap-2">
 					<Link
-						to="/recuperar-password"
+						to="/recover-password"
 						className="hover:text-purple-500  transition-colors"
 					>
-						¿Olvidaste tu contraseña?
+						Did you forget your password?
 					</Link>
 					<p>
-						¿No tienes cuenta?{' '}
+						You do not have an account?{' '}
 						<Link
-							to="/registro"
+							to="/register"
 							className="text-purple-400 hover:text-purple-500  transition-colors"
 						>
-							Registrate
+							Register
 						</Link>
 					</p>
 				</div>

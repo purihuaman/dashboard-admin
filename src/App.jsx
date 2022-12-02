@@ -13,21 +13,25 @@ import Home from './pages/admin/Home';
 import Error404 from './pages/Error404';
 import ForgetPassword from './pages/auth/ForgetPassword';
 import Profile from './pages/admin/Profile';
-import Tickets from './pages/admin/Tickets';
+import Support from './pages/admin/Support';
+import Calendar from './pages/admin/Calendar';
+import Setting from './pages/admin/Setting';
 
 function App() {
 	return (
 		<Router>
 			<Routes>
 				<Route exact path="/login" element={<Login />} />
-				<Route exact path="/registro" element={<Register />} />
-				<Route exact path="/recuperar-password" element={<ForgetPassword />} />
+				<Route exact path="/register" element={<Register />} />
+				<Route exact path="/recover-password" element={<ForgetPassword />} />
 
 				<Route exact path="/" element={<LayoutAdmin />}>
 					<Route index element={<Home />} />
-					<Route exact path="perfil" element={<Profile />} />
+					<Route exact path="profile" element={<Profile />} />
 					<Route exact path="chat" element={<Chat />} />
-					<Route exact path="tickets" element={<Tickets />} />
+					<Route exact path="support" element={<Support />} />
+					<Route exact path="calendar" element={<Calendar />} />
+					<Route exact path="setting" element={<Setting />} />
 				</Route>
 
 				<Route path="*" element={<Error404 />} />

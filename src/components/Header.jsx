@@ -7,6 +7,7 @@ const Header = () => {
 	const [notificationsMenu, setNotificationsMenu] = useState(false);
 
 	const handleHidePerfilMenu = () => setPerfilMenu(!perfilMenu);
+
 	const handleHideNotificationsMenu = () =>
 		setNotificationsMenu(!notificationsMenu);
 
@@ -31,14 +32,14 @@ const Header = () => {
 						} transition-[height, transform] duration-150 flex flex-col gap-2 py-3 px-2 rounded-md cursor-default`}
 					>
 						<div className="text-2xl py-2 px-4 text-center font-bold">
-							<span>Notificaciones</span>
+							<span>Notifications</span>
 						</div>
 
 						<hr className="border-slate-700" />
 
 						<li>
 							<Link
-								to="/configuracion"
+								to="/setting"
 								className="block py-2 px-4 hover:bg-slate-900 transition-colors rounded-md flex items-center gap-x-2"
 							>
 								<img
@@ -60,7 +61,7 @@ const Header = () => {
 
 						<li>
 							<Link
-								to="/configuracion"
+								to="/setting"
 								className="block py-2 px-4 hover:bg-slate-900 transition-colors rounded-md flex items-center gap-x-2"
 							>
 								<div className="w-12 h-10 bg-blue-100 inline-flex items-center justify-center rounded-full">
@@ -69,11 +70,11 @@ const Header = () => {
 
 								<div className="w-full flex flex-col items-start">
 									<div className="w-full flex items-center justify-between gap-2 text-left">
-										<p>Nuevo like</p>
+										<p>New like</p>
 										<p className="text-xs text-slate-300">28/11/2022</p>
 									</div>
 									<p className="text-sm text-left text-slate-300  whitespace-nowrap text-ellipsis overflow-hidden max-w-[180px]">
-										A vegeta le a gustado tu públicación...
+										Vegeta liked your post...
 									</p>
 								</div>
 							</Link>
@@ -81,7 +82,7 @@ const Header = () => {
 
 						<li>
 							<Link
-								to="/configuracion"
+								to="/setting"
 								className="block py-2 px-4 hover:bg-slate-900 transition-colors rounded-md flex items-center gap-x-2"
 							>
 								<div className="w-12 h-10 bg-green-50 inline-flex items-center justify-center rounded-full">
@@ -90,11 +91,11 @@ const Header = () => {
 
 								<div className="w-full flex flex-col items-start">
 									<div className="w-full flex items-center justify-between gap-2 text-left">
-										<p>Nuevo comentario</p>
+										<p>New comment</p>
 										<p className="text-xs text-slate-300">28/11/2022</p>
 									</div>
 									<p className="text-sm text-slate-300 whitespace-nowrap text-ellipsis overflow-hidden max-w-[180px]">
-										Goku comento tu publicación...
+										Goku commented on your post...
 									</p>
 								</div>
 							</Link>
@@ -107,7 +108,7 @@ const Header = () => {
 								to="/"
 								className="my-2 inline-block py-2 px-2 rounded-md text-slate-300 hover:text-blue-500"
 							>
-								Todas las notificaciones
+								All notifications
 							</Link>
 						</li>
 					</ul>
@@ -137,7 +138,7 @@ const Header = () => {
 					>
 						<li>
 							<Link
-								to="/perfil"
+								to="/profile"
 								className="block py-2 px-4 hover:bg-slate-900 transition-colors rounded-md flex items-center gap-x-2"
 							>
 								<img
@@ -158,21 +159,21 @@ const Header = () => {
 
 						<li>
 							<Link
-								to="/configuracion"
+								to="/setting"
 								className="block py-2 px-4 hover:bg-slate-900 transition-colors rounded-md flex items-center gap-x-2"
 							>
 								<i className="ri-tools-line"></i>
-								Configuración
+								Setting
 							</Link>
 						</li>
 
 						<li>
 							<Link
-								to="/cerrar-sesion"
+								to="/sign-off"
 								className="block py-2 px-4 hover:bg-slate-900 transition-colors rounded-md flex items-center gap-x-2"
 							>
 								<i className="ri-logout-circle-r-line"></i>
-								Cerrar sesión
+								Sign off
 							</Link>
 						</li>
 					</ul>

@@ -10,7 +10,7 @@ const Register = () => {
 		<div className="min-h-screen flex items-center justify-center bg-[url('/assets/image/hero.jpg')] bg-no-repeat bg-cover px-2">
 			<div className="w-full max-w-md bg-slate-800 p-6 rounded-md shadow-2xl">
 				<h1 className="text-3xl text-center uppercase tracking-[4px]">
-					Crear <span className="text-purple-500">cuenta</span>
+					Create <span className="text-purple-500">account</span>
 				</h1>
 
 				<form action="#" className="py-6 px-2">
@@ -23,7 +23,7 @@ const Register = () => {
 							alt="Google"
 							className="h-5 w-5"
 						/>
-						Registrate con Google
+						Sign up with Google
 					</a>
 
 					<div className="mt-7 relative">
@@ -33,7 +33,7 @@ const Register = () => {
 							name="name"
 							id="name"
 							className="w-full py-3 pr-3 pl-8 rounded-md bg-slate-900 outline-none"
-							placeholder="Nombre(s)"
+							placeholder="Name(s)"
 						/>
 					</div>
 
@@ -44,7 +44,7 @@ const Register = () => {
 							name="lastname"
 							id="lastname"
 							className="w-full py-3 pr-3 pl-8 rounded-md bg-slate-900 outline-none"
-							placeholder="Apellidos"
+							placeholder="Lastname"
 						/>
 					</div>
 
@@ -55,7 +55,7 @@ const Register = () => {
 							name="email"
 							id="email"
 							className="w-full py-3 pr-3 pl-8 rounded-md bg-slate-900 outline-none"
-							placeholder="Correo electrónico"
+							placeholder="Email"
 						/>
 					</div>
 
@@ -64,10 +64,10 @@ const Register = () => {
 
 						<input
 							type={showPassword ? 'text' : 'password'}
-							name="repassword"
-							id="repassword"
+							name="password"
+							id="password"
 							className="w-full py-3 px-8 rounded-md bg-slate-900 outline-none"
-							placeholder="Contraseña"
+							placeholder="Password"
 						/>
 
 						<i
@@ -83,10 +83,10 @@ const Register = () => {
 
 						<input
 							type={showPassword ? 'text' : 'password'}
-							name="password"
-							id="password"
+							name="repassword"
+							id="repassword"
 							className="w-full py-3 px-8 rounded-md bg-slate-900 outline-none"
-							placeholder="Confirmar contraseña"
+							placeholder="Confirm Password"
 						/>
 
 						<i
@@ -102,19 +102,19 @@ const Register = () => {
 							type="submit"
 							className="w-full inline-flex justify-center items-center py-3 px-8 bg-purple-500 rounded-md hover:bg-purple-600 transition-colors duration-1000 hover:shadow-xl uppercase"
 						>
-							Registrarme
+							Create Account
 						</button>
 					</div>
 				</form>
 
 				<div className="text-center">
 					<p>
-						¿Ya tienes cuenta?{' '}
+						Already have an account?{' '}
 						<Link
 							to="/login"
 							className="text-purple-400 hover:text-purple-500  transition-colors"
 						>
-							Ingresar
+							Login
 						</Link>
 					</p>
 				</div>

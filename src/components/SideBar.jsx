@@ -22,7 +22,7 @@ const SideBar = () => {
 							className="inline-flex items-center gap-2 text-slate-100 w-full p-2 rounded-md hover:bg-slate-900 hover:text-blue-500 transition-colors duration-500 text-left"
 						>
 							<i className="ri-bar-chart-2-line text-blue-500"></i>
-							Analíticas
+							Analytics
 						</Link>
 					</li>
 
@@ -34,7 +34,7 @@ const SideBar = () => {
 							<span className="pt-1">
 								<i className="ri-earth-line text-blue-500"></i>
 							</span>
-							<span>Redes sociales</span>
+							<span>Social networks</span>
 							<span className="pt-1">
 								<i
 									className={`${
@@ -56,7 +56,7 @@ const SideBar = () => {
 									to="/"
 									className="block w-full py-2 pl-3 relative text-slate-100 before:h-3 before:w-3 before:absolute before:bg-blue-500 before:rounded-full before:block  before:-left-[6.5px] before:border-4 before:border-slate-800 inline-flex items-center rounded-md hover:bg-slate-900 hover:text-blue-500 transition-colors duration-500"
 								>
-									Post red social
+									Post Social Network
 								</Link>
 							</li>
 
@@ -65,7 +65,7 @@ const SideBar = () => {
 									to="/"
 									className="block w-full py-2 pl-3 relative text-slate-100 before:h-3 before:w-3 before:absolute before:bg-slate-700 before:rounded-full before:block  before:-left-[6.5px] before:border-4 before:border-slate-800 inline-flex items-center rounded-md hover:bg-slate-900 hover:text-blue-500 transition-colors duration-500"
 								>
-									Estadisticas
+									Statistics
 								</Link>
 							</li>
 
@@ -74,7 +74,7 @@ const SideBar = () => {
 									to="/"
 									className="block w-full py-2 pl-3 relative text-slate-100 before:h-3 before:w-3 before:absolute before:bg-slate-700 before:rounded-full before:block  before:-left-[6.5px] before:border-4 before:border-slate-800 inline-flex items-center rounded-md hover:bg-slate-900 hover:text-blue-500 transition-colors duration-500"
 								>
-									Perfiles
+									Profiles
 								</Link>
 							</li>
 						</ul>
@@ -82,32 +82,32 @@ const SideBar = () => {
 
 					<li className="bg-blue-90">
 						<Link
-							to="/tickets"
+							to="/support"
 							className="inline-flex items-center gap-2 text-slate-100 w-full p-2 rounded-md hover:bg-slate-900 hover:text-blue-500 transition-colors duration-500"
 						>
 							<i className="ri-user-settings-line text-blue-500"></i>
-							Soporte técnico
+							Support
 						</Link>
 					</li>
 
 					<li className="bg-blue-90">
 						<Link
-							to="/calendario"
+							to="/calendar"
 							className="inline-flex items-center gap-2 text-slate-100 w-full p-2 rounded-md hover:bg-slate-900 hover:text-blue-500 transition-colors duration-500"
 						>
 							<i className="ri-calendar-line text-blue-500"></i>
-							Calendario
+							calendar
 						</Link>
 					</li>
 				</ul>
 
 				<div className="mt-auto">
 					<Link
-						to="/cerrar-sesion"
+						to="/sign-off"
 						className="inline-flex items-center gap-2 text-slate-100 w-full p-2 rounded-md hover:bg-slate-900 hover:text-blue-500 transition-colors duration-500"
 					>
 						<i className="ri-logout-circle-r-line text-blue-500"></i>
-						Cerrar sesión
+						Sign off
 					</Link>
 				</div>
 			</nav>
